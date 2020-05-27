@@ -26,7 +26,7 @@ request](https://github.com/rakudo/rakudo/pull/2648) for Rakudo to fix this
 exact problem. The pull request never got much attention and has subsequently
 been closed. Mostly, (it seems,) due to the author being unsatisfied with it than anything else.
 
-And even more of a downer, it only proposed to implement CStruct call-by-value
+And even more of a downer, it only proposed to implement CStruct pass-by-value
 for libffi. Which, don't get me wrong, is awesome, but is the secondary foreign
 function interface used by Moar. The primary interface: dynCall would not use the
 same code. (mostly?)
@@ -35,7 +35,7 @@ That isn't the end of the world though, the different interface libraries would
 almost definitely need to be implemented separately at a low level and have the
 calling interface abstracted out.
 
-It appears the dynCall DOES have [a similar CStruct call-by-value routine](https://github.com/MoarVM/dyncall/blob/463573e7aa6ef3a9c361106463fad07c41861af3/dyncall/dyncall_api.c#L150).
+It appears the dynCall DOES have [a similar CStruct pass-by-value routine](https://github.com/MoarVM/dyncall/blob/463573e7aa6ef3a9c361106463fad07c41861af3/dyncall/dyncall_api.c#L150).
 
 So it seems like it should be possible. Documentation is pretty thin so it may
 be fiddly to get working. I'm not even sure if it should be implemented at the
@@ -62,7 +62,7 @@ stick, and is slightly better than nothing at all. And hey, if you were looking
 for a way to contribute that someone would appreciate, this isn't a bad place to
 look IMO.
 
-What would the "finished" status be? Code in Raku exposing CStruct call-by-value
+What would the "finished" status be? Code in Raku exposing CStruct pass-by-value
 for NativeCall, accepted by the project leader (jnthn effectively), through the
 dynCall interface, that would at a minimum let the above mentioned SDL2-ttf
 library pass color CStructs the way the library wants them (by value).
