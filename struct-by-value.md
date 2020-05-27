@@ -57,7 +57,7 @@ a little sweetener? I would be willing to put up $200US as a small incentive to
 make it a little more palatable.
 
 Yes, I am aware that that is a pitiful amount compared to the time and effort
-it will probably take, but it is better than an poke in the eye with a sharp
+it will probably take, but it is better than a poke in the eye with a sharp
 stick, and is slightly better than nothing at all. And hey, if you were looking
 for a way to contribute that someone would appreciate, this isn't a bad place to
 look IMO.
