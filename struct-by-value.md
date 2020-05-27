@@ -10,7 +10,7 @@ pretty well in NativeCall. I have been stymied several times though while
 looking into implementing library interfaces because it isn't particularly rare
 to use pass-by-value for small, static CStructs.
 
-I really want to avoid needing to write C wrappers for the libraries is
+I really want to avoid needing to write C wrappers for the libraries if
 possible, for several reasons:
 
 1. My C code sucks. I am not  a programmer by profession, and while I have written C, the people who then needed to use that C code got (justifiably) sad. (And it has been over 15 years since I wrote any serious C code.)
