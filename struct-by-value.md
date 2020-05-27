@@ -63,7 +63,7 @@ for a way to contribute that someone would appreciate, this isn't a bad place to
 look IMO.
 
 What would the "finished" status be? Code in Raku (or Moar) exposing CStruct
-call-by-value, accepted by the project leader (jnthn efectively), through the dynCall interface,
+call-by-value, accepted by the project leader (jnthn effectively), through the dynCall interface,
 that would at a minimum let the above mentioned SDL2-ttf library pass color
 CStructs the way the library wants them (by value).
 
