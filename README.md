@@ -53,6 +53,8 @@ Documentation for the SDL2_ttf library, which works very similar to, but not exa
 
 Several routines are called slightly differently, and many are not exposed at due to the different requirements and capabilities of the Raku runtime and the C library.
 
+Try out the `ttftest.p6` script in the examples folder to get a feel for how it can be used.
+
 ### Enumerations
 
 There are a few enumerations provided.
@@ -392,7 +394,7 @@ Subroutines:
 
   * Returns: The current style name of the face of the font, or NULL if not available.
 
-### <a name="TTF_GlyphIsProvided"></a> `TTF_GlyphIsProvided($font, $character)`
+### <a name="TTF_GlyphIsProvided"></a> `TTF_GlyphIsProvided($font, $character or $ordinal)`
 
   * Get the status of the availability of the glyph for $character from the loaded font.
 
@@ -400,9 +402,11 @@ Subroutines:
 
     * $font - Pointer to loaded font.
 
-    * $character - String containing the character to check for.
+    * Either: $character - String containing the $character to check for.
 
-  * Returns: The index of the glyph for $character in font, or 0 for an undefined character code.
+    * Or: $ordinal - Integer $ordinal of character.
+
+  * Returns: The index of the glyph location in the font for $character, or 0 for an undefined character code. (Note: returns the font file index, NOT the character ordinal.)
 
 ### <a name="TTF_GlyphMetrics"></a> `TTF_GlyphMetrics($font, $character)`
 
