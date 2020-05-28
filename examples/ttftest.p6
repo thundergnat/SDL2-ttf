@@ -128,8 +128,8 @@ main: loop {
     # Camelia
     SDL_RenderCopy( $render, $c1, Nil, SDL_Rect.new( 0, 0, $ch, $ch) );
     SDL_RenderCopy( $render, $c2, Nil, SDL_Rect.new( $width - $ch, 0, $ch, $ch) );
-    SDL_RenderCopy( $render, $c1, Nil, SDL_Rect.new( 0, $height - $ch, $ch, $ch) );
-    SDL_RenderCopy( $render, $c2, Nil, SDL_Rect.new( $width - $ch, $height - $ch, $ch, $ch) );
+    SDL_RenderCopy( $render, $c2, Nil, SDL_Rect.new( 0, $height - $ch, $ch, $ch) );
+    SDL_RenderCopy( $render, $c1, Nil, SDL_Rect.new( $width - $ch, $height - $ch, $ch, $ch) );
 
     SDL_RenderPresent($render);
 
@@ -137,6 +137,7 @@ main: loop {
     print fps;
 }
 
+say '';
 SDL_Quit();
 
 sub handle-event ($event) {
