@@ -15,11 +15,11 @@ my $font = TTF_OpenFont($file, 64);
 
 isa-ok(TTF_Font, $font);
 
-ok( TTF_FontFaces($font) == 1, 'Correct number of Faces');
+is( TTF_FontFaces($font), 1, 'Correct number of Faces');
 
 is( TTF_FontFaceFamilyName($font), 'Ubuntu', 'Correct Family name');
 
-ok( TTF_GetFontStyle($font) == 0, 'Font style index returns sane value');
+is( TTF_GetFontStyle($font), 0, 'Font style index returns sane value');
 
 is-deeply( TTF_GetFontStyles($font), $("STYLE_NORMAL",), 'Font style enumeration returns sane value');
 
@@ -33,7 +33,7 @@ is(TTF_FontDescent($font), -12, 'Descent is as expected');
 
 is(TTF_FontLineSkip($font), 74, 'Line Skip Height is as expected');
 
-ok(TTF_GetFontKerning($font) == True, 'Kerning is as expected');
+is(so TTF_GetFontKerning($font), True, 'Kerning is as expected');
 
 is(TTF_GetFontHinting($font), 0, 'Hinting is as expected');
 
