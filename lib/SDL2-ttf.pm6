@@ -645,8 +645,8 @@ C<TTF_GetFontStyles($font)>
 C<TTF_SetFontStyle($font, $style)>
 =item Set the rendering style of the loaded font.
 =item Takes:
-item2 $font - Pointer to loaded font.
-item2 $style - The bitwise or of the desired styles codes. See [the TTF_STYLE ENUM](#TTF_STYLE)
+=item2 $font - Pointer to loaded font.
+=item2 $style - The bitwise or of the desired styles codes. See [the TTF_STYLE ENUM](#TTF_STYLE)
 =item Returns: Nothing
 
 

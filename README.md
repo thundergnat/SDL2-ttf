@@ -266,7 +266,11 @@ Subroutines:
 
   * Set the rendering style of the loaded font.
 
-  * Takes: item2 $font - Pointer to loaded font. item2 $style - The bitwise or of the desired styles codes. See [the TTF_STYLE ENUM](#TTF_STYLE)
+  * Takes:
+
+    * $font - Pointer to loaded font.
+
+    * $style - The bitwise or of the desired styles codes. See [the TTF_STYLE ENUM](#TTF_STYLE)
 
   * Returns: Nothing
 
