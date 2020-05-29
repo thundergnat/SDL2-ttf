@@ -1,4 +1,6 @@
 use Test;
+
+use lib 'lib';
 use SDL2-ttf;
 
 plan 23;
@@ -10,7 +12,10 @@ is(TTF_Color(0x00, 0xC8, 0x00).fmt('%032b'), '11111111000000001100100000000000',
 is(TTF_Color(0xFF, 0x1C, 0xAE).fmt('%032b'), '11111111101011100001110011111111', 'Pink as expected');
 is(TTF_Color(0xFF, 0xFF, 0x00).fmt('%032b'), '11111111000000001111111111111111', 'Yellow as expected');
 
-my $file = './font/Ubuntu-Medium.ttf';
+my $file = './t/font/Ubuntu-Medium.ttf';
+
+fail "font file not found" unless $file.IO.e;
+
 my $font = TTF_OpenFont($file, 64);
 
 isa-ok(TTF_Font, $font);
