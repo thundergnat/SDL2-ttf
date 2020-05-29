@@ -428,7 +428,7 @@ Subroutines:
 
     * :style(TTF_FontFaceStyleName($font)) - The style
 
-    * :char($character) - The charcter checked
+    * :char($character) - The character checked
 
     * :$min-x - The minimum X offset into the character.
 

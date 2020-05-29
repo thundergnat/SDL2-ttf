@@ -774,7 +774,7 @@ C<TTF_GlyphMetrics($font, $character)>
 =item Returns: A hash containing the following information:
 =item2 :font(TTF_FontFaceFamilyName($font)) - The Family Face name
 =item2 :style(TTF_FontFaceStyleName($font)) - The style
-=item2 :char($character) - The charcter checked
+=item2 :char($character) - The character checked
 =item2 :$min-x - The minimum X offset into the character.
 =item2 :$max-x - The maximum X offset into the character.
 =item2 :$min-y - The minimum Y offset into the character.
