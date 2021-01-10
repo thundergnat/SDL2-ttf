@@ -313,7 +313,6 @@ sub TTF_Render_Solid( TTF_Font $font, str $text, uint32 $fg )
     is export
     { TTF_RenderUTF8_Solid( $font, $text, $fg ) }
 
-
 sub TTF_RenderUTF8_Solid(
     TTF_Font,
     str,
@@ -659,7 +658,7 @@ C<TTF_GetFontOutline($font)>
 
 ### <a name="TTF_SetFontOutline"></a>
 C<TTF_SetFontOutline($font, $outline)>
-=item Get the current outline size of the loaded font.
+=item Set the current outline size of the loaded font.
 =item Takes:
 =item2 $font - Pointer to loaded font.
 =item2 $outline - The size of outline desired, in pixels.
@@ -812,7 +811,7 @@ C<TTF_Color($red, $green, $blue, $alpha = 255)>
 
 
 ### <a name="TTF_Render_Solid"></a>
-C<TTF_Render_Solid($font, $fg)>
+C<TTF_Render_Solid($font, $text, $fg)>
 =item Render the passed $text using $font with $fg color onto a new surface, using Solid mode.
 =item Takes:
 =item2 $font - Pointer to loaded font.
@@ -822,7 +821,7 @@ C<TTF_Render_Solid($font, $fg)>
 
 
 ### <a name="TTF_Render_Shaded"></a>
-C<TTF_Render_Shaded($font, $fg, $bg)>
+C<TTF_Render_Shaded($font, $text, $fg, $bg)>
 =item Render the passed $text using $font with $fg color onto a new $bg colored surface, using Shaded mode.
 =item Takes:
 =item2 $font - Pointer to loaded font.
@@ -833,7 +832,7 @@ C<TTF_Render_Shaded($font, $fg, $bg)>
 
 
 ### <a name="TTF_Render_Blended"></a>
-C<TTF_Render_Blended($font, $fg)>
+C<TTF_Render_Blended($font, $text, $fg)>
 =item Render the passed $text using $font with $fg color onto a new surface, using Blended mode.
 =item Takes:
 =item2 $font - Pointer to loaded font.
@@ -843,7 +842,7 @@ C<TTF_Render_Blended($font, $fg)>
 
 
 ### <a name="TTF_Render_Blended_Wrapped"></a>
-C<TTF_Render_Blended_Wrapped($font, $fg, $length)>
+C<TTF_Render_Blended_Wrapped($font, $text, $fg, $length)>
 =item A convenience routine to render wrapped text, in Blended mode.
 =item Takes:
 =item2 $font - Pointer to loaded font.

@@ -63,28 +63,29 @@ There are a few enumerations provided.
 
 **TTF_STYLE** - The various font styles that may be available and/or specified:
 
-<table class="pod-table">
-<caption>TTF_STYLE</caption>
-<thead><tr>
-<th>Name</th> <th>value</th>
-</tr></thead>
-<tbody>
-<tr> <td>STYLE_NORMAL</td> <td>0</td> </tr> <tr> <td>STYLE_BOLD</td> <td>1</td> </tr> <tr> <td>STYLE_ITALIC</td> <td>2</td> </tr> <tr> <td>STYLE_UNDERLINE</td> <td>4</td> </tr> <tr> <td>STYLE_STRIKETHROUGH</td> <td>8</td> </tr>
-</tbody>
+<table class="pod-table"><caption>TTF_STYLE</caption>	<thead>
+		<tr><th>Name</th><th>value</th></tr>
+	</thead>	<tbody>
+		<tr><td>STYLE_NORMAL</td><td>0</td></tr>
+		<tr><td>STYLE_BOLD</td><td>1</td></tr>
+		<tr><td>STYLE_ITALIC</td><td>2</td></tr>
+		<tr><td>STYLE_UNDERLINE</td><td>4</td></tr>
+		<tr><td>STYLE_STRIKETHROUGH</td><td>8</td></tr>
+	</tbody>
 </table>
 
 ### <a name="TTF_HINTING"></a>
 
 **TTF_HINTING** - The various font hints that may be available and/or specified:
 
-<table class="pod-table">
-<caption>TTF_HINTING</caption>
-<thead><tr>
-<th>Name</th> <th>value</th>
-</tr></thead>
-<tbody>
-<tr> <td>HINT_NORMAL</td> <td>0</td> </tr> <tr> <td>HINT_LIGHT</td> <td>1</td> </tr> <tr> <td>HINT_MONO</td> <td>2</td> </tr> <tr> <td>HINT_NONE</td> <td>3</td> </tr>
-</tbody>
+<table class="pod-table"><caption>TTF_HINTING</caption>	<thead>
+		<tr><th>Name</th><th>value</th></tr>
+	</thead>	<tbody>
+		<tr><td>HINT_NORMAL</td><td>0</td></tr>
+		<tr><td>HINT_LIGHT</td><td>1</td></tr>
+		<tr><td>HINT_MONO</td><td>2</td></tr>
+		<tr><td>HINT_NONE</td><td>3</td></tr>
+	</tbody>
 </table>
 
 Subroutines:
@@ -284,7 +285,7 @@ Subroutines:
 
 ### <a name="TTF_SetFontOutline"></a> `TTF_SetFontOutline($font, $outline)`
 
-  * Get the current outline size of the loaded font.
+  * Set the current outline size of the loaded font.
 
   * Takes:
 
@@ -478,7 +479,7 @@ Glyph Metrics explained: (image copyright libsdl.org)
 
   * Returns: The packed TTF_Color.
 
-### <a name="TTF_Render_Solid"></a> `TTF_Render_Solid($font, $fg)`
+### <a name="TTF_Render_Solid"></a> `TTF_Render_Solid($font, $text, $fg)`
 
   * Render the passed $text using $font with $fg color onto a new surface, using Solid mode.
 
@@ -492,7 +493,7 @@ Glyph Metrics explained: (image copyright libsdl.org)
 
   * Returns: A pointer to a new SDL Surface.
 
-### <a name="TTF_Render_Shaded"></a> `TTF_Render_Shaded($font, $fg, $bg)`
+### <a name="TTF_Render_Shaded"></a> `TTF_Render_Shaded($font, $text, $fg, $bg)`
 
   * Render the passed $text using $font with $fg color onto a new $bg colored surface, using Shaded mode.
 
@@ -508,7 +509,7 @@ Glyph Metrics explained: (image copyright libsdl.org)
 
   * Returns: A pointer to a new SDL Surface.
 
-### <a name="TTF_Render_Blended"></a> `TTF_Render_Blended($font, $fg)`
+### <a name="TTF_Render_Blended"></a> `TTF_Render_Blended($font, $text, $fg)`
 
   * Render the passed $text using $font with $fg color onto a new surface, using Blended mode.
 
@@ -522,7 +523,7 @@ Glyph Metrics explained: (image copyright libsdl.org)
 
   * Returns: A pointer to a new SDL Surface.
 
-### <a name="TTF_Render_Blended_Wrapped"></a> `TTF_Render_Blended_Wrapped($font, $fg, $length)`
+### <a name="TTF_Render_Blended_Wrapped"></a> `TTF_Render_Blended_Wrapped($font, $text, $fg, $length)`
 
   * A convenience routine to render wrapped text, in Blended mode.
 
