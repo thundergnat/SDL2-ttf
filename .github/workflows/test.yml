@@ -24,6 +24,8 @@ jobs:
           raku-version: ${{ matrix.raku-version }}
       - name: Install Dependencies
         run: zef install --/test --test-depends --deps-only .
+      - name: Install library
+        run: sudo apt-get -y install libsdl2-ttf-dev  
       - name: Install App::Prove6
         run: zef install --/test App::Prove6
       - name: Run Tests
