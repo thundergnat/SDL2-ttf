@@ -1,15 +1,29 @@
 {
-    "perl"          : "6",
-    "name"          : "SDL2-ttf",
-    "version"       : "0.0.2",
-    "description"   : "Render TrueType fonts in SDL2",
-    "authors"       : [ "Steve Schulze (thundergnat)" ],
-    "provides"      : { "SDL2-ttf" : "lib/SDL2-ttf.pm6" },
-    "depends"       : [ "SDL2::Raw" ],
-    "build-depends" : [ ],
-    "test-depends"  : [ "Test" ],
-    "source-type"   : "git",
-    "source-url"    : "git://github.com/thundergnat/SDL2-ttf.git",
-    "license"       : "Artistic-2.0",
-    "tags"          : [ "TrueType", "FreeFont", "SDL2" ]
+  "auth": "zef:thundergnat",
+  "authors": [
+    "Steve Schulze (thundergnat)"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+    "SDL2::Raw"
+  ],
+  "description": "FreeType interface to render text in SDL2",
+  "license": "Artistic-2.0",
+  "name": "SDL2-ttf",
+  "perl": "6.d",
+  "provides": {
+    "SDL2-ttf": "lib/SDL2-ttf.pm6"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/thundergnat/SDL2-ttf.git",
+  "tags": [
+    "TrueType",
+    "FreeFont",
+    "SDL2"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.3"
 }

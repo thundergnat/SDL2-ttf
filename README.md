@@ -1,9 +1,9 @@
+[![Actions Status](https://github.com/thundergnat/SDL2-ttf/actions/workflows/test.yml/badge.svg)](https://github.com/thundergnat/SDL2-ttf/actions)
+
 NAME
 ====
 
 SDL2-ttf - FreeType interface to render text in SDL2
-
-[![Build Status](https://travis-ci.org/thundergnat/SDL2-ttf.svg?branch=master)](https://travis-ci.org/thundergnat/SDL2-ttf)
 
 SYNOPSIS
 ========
@@ -63,29 +63,28 @@ There are a few enumerations provided.
 
 **TTF_STYLE** - The various font styles that may be available and/or specified:
 
-<table class="pod-table"><caption>TTF_STYLE</caption>	<thead>
-		<tr><th>Name</th><th>value</th></tr>
-	</thead>	<tbody>
-		<tr><td>STYLE_NORMAL</td><td>0</td></tr>
-		<tr><td>STYLE_BOLD</td><td>1</td></tr>
-		<tr><td>STYLE_ITALIC</td><td>2</td></tr>
-		<tr><td>STYLE_UNDERLINE</td><td>4</td></tr>
-		<tr><td>STYLE_STRIKETHROUGH</td><td>8</td></tr>
-	</tbody>
+<table class="pod-table">
+<caption>TTF_STYLE</caption>
+<thead><tr>
+<th>Name</th> <th>value</th>
+</tr></thead>
+<tbody>
+<tr> <td>STYLE_NORMAL</td> <td>0</td> </tr> <tr> <td>STYLE_BOLD</td> <td>1</td> </tr> <tr> <td>STYLE_ITALIC</td> <td>2</td> </tr> <tr> <td>STYLE_UNDERLINE</td> <td>4</td> </tr> <tr> <td>STYLE_STRIKETHROUGH</td> <td>8</td> </tr>
+</tbody>
 </table>
 
 ### <a name="TTF_HINTING"></a>
 
 **TTF_HINTING** - The various font hints that may be available and/or specified:
 
-<table class="pod-table"><caption>TTF_HINTING</caption>	<thead>
-		<tr><th>Name</th><th>value</th></tr>
-	</thead>	<tbody>
-		<tr><td>HINT_NORMAL</td><td>0</td></tr>
-		<tr><td>HINT_LIGHT</td><td>1</td></tr>
-		<tr><td>HINT_MONO</td><td>2</td></tr>
-		<tr><td>HINT_NONE</td><td>3</td></tr>
-	</tbody>
+<table class="pod-table">
+<caption>TTF_HINTING</caption>
+<thead><tr>
+<th>Name</th> <th>value</th>
+</tr></thead>
+<tbody>
+<tr> <td>HINT_NORMAL</td> <td>0</td> </tr> <tr> <td>HINT_LIGHT</td> <td>1</td> </tr> <tr> <td>HINT_MONO</td> <td>2</td> </tr> <tr> <td>HINT_NONE</td> <td>3</td> </tr>
+</tbody>
 </table>
 
 Subroutines:

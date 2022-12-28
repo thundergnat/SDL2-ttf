@@ -1,4 +1,4 @@
-unit module SDL2-ttf:ver<0.1>;
+unit module SDL2-ttf:ver<0.0.3>:auth<zef:thundergnat>;
 
 use NativeCall;
 
@@ -381,8 +381,6 @@ sub TTF_RenderUTF8_Blended_Wrapped(
 =head1 NAME
 
 SDL2-ttf - FreeType interface to render text in SDL2
-
-[![Build Status](https://travis-ci.org/thundergnat/SDL2-ttf.svg?branch=master)](https://travis-ci.org/thundergnat/SDL2-ttf)
 
 =head1 SYNOPSIS
 

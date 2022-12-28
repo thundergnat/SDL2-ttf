@@ -1,0 +1,10 @@
+Revision history for SDL2-ttf
+
+{{$NEXT}}
+    - Migrate to fez ecosystem
+
+
+0.0.2 - Make testing a little less fragile:
+          Test for ranges rather than absolute values
+
+0.0.1 - Initial version
